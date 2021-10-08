@@ -1,0 +1,19 @@
+## file extensions
+*.*
+*.css
+*.js
+*.json
+*.jsx
+*.less
+*.md
+*.mdx
+*.tsx
+*.yml
+**/dist
+build
+coverage
+dist
+data
+coverage
+.vscode
+index.d.ts
