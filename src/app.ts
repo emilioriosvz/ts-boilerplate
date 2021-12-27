@@ -2,7 +2,10 @@
 import express from 'express';
 import * as usersRepo from './usersRepo'
 
+// Create Express server
 const app = express();
+
+// Express configuration
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
