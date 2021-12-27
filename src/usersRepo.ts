@@ -15,11 +15,11 @@ function getUserByUsername(username: string): IUser | void {
     return users.find(user => user.username === username);
 }
 
-function createUser(user: { username: string}): IUser {
+function createUser(user: { username: string }): IUser {
     const newUser = {
         id: uuidv4(),
-        username: user.username
-    }
+        username: user.username,
+    };
 
     users.push(newUser);
 
@@ -29,7 +29,7 @@ function createUser(user: { username: string}): IUser {
 function updateUser(userId: string, newUser: IUser): IUser | void {
     const userIndex = users.findIndex(user => user.id === userId);
 
-    if(userIndex === -1) {
+    if (userIndex === -1) {
         return undefined;
     }
 
@@ -41,7 +41,7 @@ function updateUser(userId: string, newUser: IUser): IUser | void {
 function deleteUser(userId: string): boolean {
     const userIndex = users.findIndex(user => user.id === userId);
 
-    if(userIndex === -1) {
+    if (userIndex === -1) {
         return false;
     }
 
@@ -50,4 +50,4 @@ function deleteUser(userId: string): boolean {
     return true;
 }
 
-export {getUsers, getUserById, getUserByUsername, createUser, updateUser, deleteUser}
+export { getUsers, getUserById, getUserByUsername, createUser, updateUser, deleteUser };
