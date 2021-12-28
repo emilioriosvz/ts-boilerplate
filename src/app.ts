@@ -5,11 +5,11 @@ import * as usersRepo from './usersRepo'
 // Create Express server
 const app = express();
 
-// Express configuration
+// Express configuration --> midellware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/users', (req , res) => {
+app.get('/users', (req, res) => {
   const username = req.query.username as string;
 
   if (!username) {

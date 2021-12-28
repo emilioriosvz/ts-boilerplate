@@ -1,6 +1,8 @@
 import { v4 as uuidv4 } from 'uuid';
 import { IUser, users } from './models';
 
+//funciones que operan en la bases de datos
+
 function getUsers(): IUser[] {
     return users;
 }
