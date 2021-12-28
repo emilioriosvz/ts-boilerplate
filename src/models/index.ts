@@ -1,25 +1,25 @@
 interface IUser {
-    id: string,
-    username: string
+    id: string;
+    username: string;
 }
 
 const users: IUser[] = [
     {
         id: '1',
-        username: 'JaimeAmate'
+        username: 'JaimeAmate',
     },
     {
         id: '2',
-        username: 'RosaBerned'
+        username: 'RosaBerned',
     },
-   {
-       id: '3',
-       username: 'Marene'
-   },
-   {
-       id: '4',
-       username: 'LucasMachado'
-   }
-]
+    {
+        id: '3',
+        username: 'Marene',
+    },
+    {
+        id: '4',
+        username: 'LucasMachado',
+    },
+];
 
-export { IUser, users }
+export { IUser, users };
